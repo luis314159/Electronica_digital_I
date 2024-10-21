@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Estudio - Electrónica Digital I</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMgBy7IFZr7Vm6-tDoANJhn_ak-sOZSvzRXA&s" alt="ULSA Logo 1">
+            <img src="https://static.wixstatic.com/media/50abbb_a6b00299fb4c48f5b029e7792a7a6eea~mv2.jpg/v1/crop/x_460,y_0,w_1621,h_1182/fill/w_594,h_462,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ULSA%20LOGO999999999.jpg" alt="ULSA Logo 2">
+            <h1>Guía de Estudio</h1>
+        </header>
+
+        <div class="profesor-info">
+            <h3>Profesor: M.I. Luis Ángel Almazán López</h3>
+            <p><a href="https://luis314159.github.io/LuisAlmazan/">https://luis314159.github.io/LuisAlmazan/</a></p>
+            <p>Materia: Electrónica Digital I</p>
+            <p>Carrera: Ingeniería Electromédica</p>
+        </div>
+
+        <section>
+            <h2>Temario</h2>
+            <div class="temario">
+                <ul>
+                    <li>Compuertas Lógicas</li>
+                    <li>Simplificación de Ecuaciones (SOP y POS)</li>
+                    <li>Leyes de Álgebra de Boole</li>
+                    <li>Mapas de Karnaugh</li>
+                    <li>Condiciones "No Importa"</li>
+                    <li>Encoder y Decoder</li>
+                    <li>Multiplexores (MUX) y Demultiplexores (DEMUX)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Ejercicios de Estudio</h2>
+
+            <div class="ejercicio">
+                <h3>1. Compuertas Lógicas</h3>
+                <p><strong>Ejercicio 1.1:</strong> Dibuja un circuito que utilice compuertas AND, OR y NOT, y calcula la tabla de verdad para 3 entradas (A, B, C).</p>
+                <p><strong>Ejercicio 1.2:</strong> Diseña un circuito con compuertas XOR y NAND para obtener la expresión lógica <code>(A ⊕ B) ⋅ (A' + B')</code> y realiza su tabla de verdad.</p>
+            </div>
+
+            <div class="ejercicio">
+                <h3>2. Simplificación de Ecuaciones</h3>
+                <p><strong>Ejercicio 2.1 (SOP):</strong> Simplifica la siguiente función lógica usando la forma SOP: <br>
+                    <code>F(A, B, C) = A'B'C + AB'C + ABC + A'BC</code>
+                </p>
+                <p><strong>Ejercicio 2.2 (POS):</strong> Convierte la siguiente expresión a POS y simplifícala: <br>
+                    <code>F(X, Y, Z) = (X + Y + Z')(X' + Y + Z)(X + Y' + Z)</code>
+                </p>
+                <p><strong>Ejercicio 2.3 (Álgebra de Boole):</strong> Simplifica la siguiente ecuación aplicando las Leyes de Álgebra de Boole: <br>
+                    <code>F(A, B, C) = A(B + C)(A + B')</code>
+                </p>
+            </div>
+
+            <div class="ejercicio">
+                <h3>3. Mapas de Karnaugh</h3>
+                <p><strong>Ejercicio 3.1:</strong> Simplifica usando un mapa de Karnaugh de 3 variables la función: <br>
+                    <code>F(A, B, C) = Σm(1, 3, 5, 7)</code>
+                </p>
+                <p><strong>Ejercicio 3.2:</strong> Utiliza un mapa de Karnaugh de 4 variables para simplificar: <br>
+                    <code>F(W, X, Y, Z) = Σm(1, 3, 7, 11, 15) + d(0, 2, 5)</code>
+                </p>
+            </div>
+
+            <div class="ejercicio">
+                <h3>4. Condiciones "No Importa"</h3>
+                <p><strong>Ejercicio 4.1:</strong> Simplifica usando condiciones "No Importa": <br>
+                    <code>F(A, B, C, D) = Σm(1, 3, 5, 7, 9) + d(0, 2, 8)</code>
+                </p>
+                <p><strong>Ejercicio 4.2:</strong> Encuentra la función simplificada usando un mapa de Karnaugh con <code>d(6, 10, 12)</code>.</p>
+            </div>
+
+            <div class="ejercicio">
+                <h3>5. Encoder y Decoder</h3>
+                <p><strong>Ejercicio 5.1:</strong> Diseña un encoder de 4 a 2 y escribe su tabla de verdad.</p>
+                <p><strong>Ejercicio 5.2:</strong> Diseña un decoder de 2 a 4 y explica cómo funcionan las señales de habilitación.</p>
+            </div>
+
+            <div class="ejercicio">
+                <h3>6. Multiplexores (MUX) y Demultiplexores (DEMUX)</h3>
+                <p><strong>Ejercicio 6.1:</strong> Diseña un multiplexor de 4 a 1 y muestra cómo las señales de selección controlan la salida.</p>
+                <p><strong>Ejercicio 6.2:</strong> Diseña un demultiplexor de 1 a 4 e indica cómo se distribuye la señal de entrada entre las salidas.</p>
+            </div>
+        </section>
+
+        <footer>
+            “Ninguna pérdida debe sernos más sensible que la del tiempo, puesto que es irreparable”. - Zenón de Citio
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
