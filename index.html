@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guía de Estudio - Electrónica Digital I</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,7 +17,9 @@
 
         <div class="profesor-info">
             <h3>Profesor: M.I. Luis Ángel Almazán López</h3>
-            <p><a href="https://luis314159.github.io/LuisAlmazan/">https://luis314159.github.io/LuisAlmazan/</a></p>
+            <p class="flex-center"> <a href="https://luis314159.github.io/LuisAlmazan/" target="_blank">
+                <i class="fab fa-github"></i>Página
+            </a></p>
             <p>Materia: Electrónica Digital I</p>
             <p>Carrera: Ingeniería Electromédica</p>
         </div>
@@ -35,6 +38,44 @@
                 </ul>
             </div>
         </section>
+
+        <section>
+            <h2>Minterms y Maxterms</h2>
+            <p>
+                En la lógica digital, los términos <b>minterms</b> y <b>maxterms</b> son fundamentales para representar las funciones booleanas:
+            </p>
+            <ul>
+                <li><strong>Minterms (Σm):</strong> Son productos de variables que representan combinaciones específicas donde la función es igual a 1. Se utilizan en la forma <em>Suma de Productos (SOP)</em>.</li>
+                <li><strong>Maxterms (ΠM):</strong> Son sumas de variables que representan combinaciones donde la función es igual a 0. Se utilizan en la forma <em>Producto de Sumas (POS)</em>.</li>
+            </ul>
+            <p>
+                Los minterms se forman combinando las variables de entrada de una función booleana donde el resultado es 1 en su tabla de verdad, mientras que los maxterms representan las combinaciones donde el resultado es 0.
+            </p>
+            <p>Por ejemplo, para una función de tres variables \(F(A, B, C)\), si la función es 1 para las combinaciones 1, 3, 5 y 7, podemos escribir:</p>
+            <ul>
+                <li><strong>SOP (Σm):</strong> \(F(A, B, C) = Σm(1, 3, 5, 7)\)</li>
+                <li><strong>POS (ΠM):</strong> Si nos interesa la representación en términos de las combinaciones donde la función es 0, usamos el producto de maxterms.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Condiciones "No Importa" (Don't Care)</h2>
+            <p>
+                Las <strong>condiciones "No Importa" (Don't Care)</strong> son entradas o combinaciones de variables en una función booleana para las cuales el valor de la salida no afecta al comportamiento del circuito. Esto significa que pueden tomar el valor de <strong>0</strong> o <strong>1</strong> sin cambiar el resultado final de la función.
+            </p>
+            <p>
+                En un mapa de Karnaugh, las condiciones "No Importa" se representan por medio de una <strong>X</strong>. Estas condiciones son útiles porque permiten simplificar aún más una función booleana, ya que las "X" pueden ser agrupadas con los <strong>1's</strong> en el mapa para obtener grupos más grandes y, por tanto, ecuaciones más simples.
+            </p>
+            <p>
+                Por ejemplo, si tenemos la siguiente función:
+            </p>
+            <ul>
+                <li><strong>F(A, B, C, D) = Σm(1, 3, 5, 7, 9) + d(0, 2, 8)</strong></li>
+            </ul>
+            <p>
+                Aquí, los términos que se agrupan bajo <strong>d(0, 2, 8)</strong> son las condiciones "No Importa". Esto indica que en las combinaciones correspondientes a las entradas 0, 2 y 8, la función puede ser 0 o 1 sin afectar el comportamiento general. Esto facilita la agrupación en el mapa de Karnaugh para lograr una simplificación más eficiente de la ecuación.
+            </p>
+        </section>
+        
 
         <section>
             <h2>Ejercicios de Estudio</h2>
@@ -86,11 +127,16 @@
                 <h3>6. Multiplexores (MUX) y Demultiplexores (DEMUX)</h3>
                 <p><strong>Ejercicio 6.1:</strong> Diseña un multiplexor de 4 a 1 y muestra cómo las señales de selección controlan la salida.</p>
                 <p><strong>Ejercicio 6.2:</strong> Diseña un demultiplexor de 1 a 4 e indica cómo se distribuye la señal de entrada entre las salidas.</p>
+                <p><strong>Ejercicio 6.3:</strong> Cómo unes dos multiplexores 4 a 1 para generar uno de 8 a 1? (Dibuja el diagrama)</p>
+                <p><strong>Ejercicio 6.4:</strong> Qué aplicaciones tiene un encoder? (Dibuja el diagrama)</p>
             </div>
         </section>
 
         <footer>
             “Ninguna pérdida debe sernos más sensible que la del tiempo, puesto que es irreparable”. - Zenón de Citio
+            <br>
+            <br>
+            © 2024 Luis Ángel Almazán López. All Rights Reserved.
         </footer>
     </div>
 
